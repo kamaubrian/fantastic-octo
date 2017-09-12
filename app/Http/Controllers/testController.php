@@ -14,9 +14,9 @@ class testController extends Controller
      * @param  \App\lain  $lain
      * @return \Illuminate\Http\Response
      */
-    public function index(lain $lain)
+    public function index()
     {
-        //
+        echo"<br>Test Controller";
     }
 
     /**

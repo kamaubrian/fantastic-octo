@@ -11,6 +11,11 @@
 |
 */
 
+
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('role',[
+ 'middleware'=>'Role:Editor',
+ 'uses'=> 'testController@index'
+]);
